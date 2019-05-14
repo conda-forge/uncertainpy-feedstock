@@ -10,7 +10,7 @@ source:
   sha256: 1df39206390f1410fccdb4d6f6c611203ded46d6fe176e17593a207c1b42a2e6
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
 
@@ -70,3 +70,4 @@ about:
 extra:
   recipe-maintainers:
     - volpatto
+    - simetenn

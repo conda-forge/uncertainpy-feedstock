@@ -133,5 +133,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@simetenn](https://github.com/simetenn/)
 * [@volpatto](https://github.com/volpatto/)
 
