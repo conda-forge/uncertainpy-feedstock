@@ -134,4 +134,5 @@ Feedstock Maintainers
 =====================
 
 * [@volpatto](https://github.com/volpatto/)
+* [@simetenn](https://github.com/simetenn)
 
