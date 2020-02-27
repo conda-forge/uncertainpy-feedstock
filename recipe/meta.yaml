@@ -1,18 +1,18 @@
 {% set name = "uncertainpy" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1df39206390f1410fccdb4d6f6c611203ded46d6fe176e17593a207c1b42a2e6
+  sha256: e631ae5debe2523daa35119a406d78c0c05b18b695f28f2b9ef91dc29d23973f
 
 build:
-  number: 2
+  number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
