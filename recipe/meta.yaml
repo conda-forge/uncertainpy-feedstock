@@ -1,5 +1,5 @@
 {% set name = "uncertainpy" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e631ae5debe2523daa35119a406d78c0c05b18b695f28f2b9ef91dc29d23973f
+  sha256: d89cc4dd6b3f83ea5d8383d7d61b7c24cb729240c83d28a840149944fe4226b8
 
 build:
   number: 0
