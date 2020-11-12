@@ -5,9 +5,13 @@ Home: https://github.com/simetenn/uncertainpy
 
 Package license: GPL-3.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/uncertainpy-feedstock/blob/master/LICENSE.txt)
 
 Summary: A python toolbox for uncertainty quantification and sensitivity analysis tailored towards neuroscience models.
+
+Development: https://github.com/simetenn/uncertainpy
+
+Documentation: https://uncertainpy.readthedocs.io/en/latest/?badge=latest
 
 Uncertainpy is a python toolbox for uncertainty quantification and sensitivity analysis tailored towards computational
 neuroscience.
