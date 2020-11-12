@@ -44,8 +44,7 @@ test:
 
 about:
   home: https://github.com/simetenn/uncertainpy
-  license: GPL-3.0
-  license_family: GPL
+  license: GPL-2.0-or-later
   license_file: LICENSE.txt
   summary: A python toolbox for uncertainty quantification and sensitivity analysis tailored towards neuroscience models.
   description: |
