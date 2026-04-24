@@ -6,25 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 132ca08f16a9b35900421630e915edb42ae064e8e65604f313c72c07b24aad98
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
 
 requirements:
   host:
     - pip
-    - python >=3
+    - python {{ python_min }}
   run:
     - chaospy
     - h5py
     - matplotlib-base >=2
     - multiprocess
     - numpy
-    - python
+    - python >={{ python_min }}
     - salib
     - scipy
     - seaborn
@@ -33,6 +33,8 @@ requirements:
     - xvfbwrapper
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - uncertainpy
     - uncertainpy.core
